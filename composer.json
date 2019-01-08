@@ -1,0 +1,13 @@
+{
+    "name": "orr/thep-jason-r-p-c",
+    "description": "Description of project ThepJasonRPC.",
+    "authors": [
+        {
+            "name": "Suchart Bunhachirat",
+            "email": "suchartbu@gmail.com"
+        }
+    ],
+    "require": {
+        "jsonrpc/jsonrpc": "v1.0.3"
+    }
+}
