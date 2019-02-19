@@ -11,7 +11,8 @@ ini_set('display_errors', '1');
 require_once 'vendor/autoload.php';
 # set the url of the server
 # $url = 'http://localhost/OrrCodeIgniter_3/index.php/RPCServer';
-$url = 'http://10.1.16.4/OrrCodeIgniter_3/index.php/RPCServer';
+# $url = 'http://10.1.16.4/OrrCodeIgniter_3/index.php/RPCServer';
+$url = 'http://10.1.99.19/OrrCodeIgniter_3/index.php/RPCServer';
 # create our client object, passing it the server url
 $Client = new JsonRpc\Client($url);
 # set up our rpc call with a method and params

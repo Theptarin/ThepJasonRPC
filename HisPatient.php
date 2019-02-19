@@ -10,7 +10,7 @@ ini_set('default_charset', 'UTF-8');
 ini_set('display_errors', '1');
 require_once 'vendor/autoload.php';
 # set the url of the server
-$url = 'http://10.1.16.4/OrrCodeIgniter_3/index.php/HisPatientRpcS';
+$url = 'http://10.1.99.19/HIS/index.php/HisPatientRpcS';
 # create our client object, passing it the server url
 $Client = new JsonRpc\Client($url);
 # set up our rpc call with a method and params
@@ -36,9 +36,12 @@ $success = $Client->call('getByName', ['โน', 'จิ']);
                 <h1>ทะเบียนข้อมูลผู้รับบริการโรงพยาบาลเทพธารินทร์ (JsonRPC)</h1>
             </div>
             <?php
+            echo '<b>Json RPC:</b> ', $url;
+            echo '<br /><br />';
+
             echo '<b>result:</b> ', print_r($Client->result, 1);
             echo '<br /><br />';
-            
+
             echo '<b>error:</b> ', $Client->error;
             echo '<br /><br />';
 
